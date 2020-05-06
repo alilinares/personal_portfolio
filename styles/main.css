@@ -90,7 +90,11 @@ header{
 .profile-img{
     height:200px;
     max-width: 200px;
-    background: url('../media/images/IMG_0695.JPG') center/cover no-repeat var(--darkgrey);
+    background-image: url("../media/images/IMG_0695.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--darkgrey);
     border-radius: 100%;
     box-shadow: 5px 5px 5px var(--darkgrey);
 }
