@@ -113,6 +113,28 @@ header{
         max-width: 400px;}
 }
 
+@media (orientation:landscape){
+    .profile-img{
+        height: 150px;
+        max-width: 150px;
+    }
+    #welcome-section div{
+        top:0;
+    }
+}
+@media (orientation:landscape) and (min-width:700px){
+    .profile-img{
+        height: 250px;
+        max-width: 250px;
+    }
+    #welcome-section div{
+        top:0;
+    }
+    .ws-title{
+        font-size:1.8rem;
+    }
+}
+
 .ws-description{
     font-size:1.2rem;
     margin-top:1.5em;
