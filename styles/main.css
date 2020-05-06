@@ -1,0 +1,207 @@
+/* COLOR SCHEME
+lightgray: #c5dec9
+darkkhaki: #c1cf6e
+mediumaquamarine: #7bc7ad
+dimgray: #4c785f
+blurywood: #e1c097
+*/
+
+/* general settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&&family=Holtwood+One+SC&family=Yanone+Kaffeesatz:wght@200;500&display=swap');
+
+/* font families
+font-family: 'Coda', cursive;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Holtwood One SC', serif;
+ */
+ :root{
+     /* footer */
+     --darkgrey:#222831;
+     /* nav */
+     --coolgrey:#393e46;
+     /* projects section */
+     --mintblue:#eeeeee;
+     /* welcome secttion */
+     --newblue:hsl(0, 0%, 87%);
+ }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: var(--mintblue);
+}
+
+/* TYPOGRAPHY */
+.ws-title,.pro-title,.contact-title{
+    font-size:1.35rem;
+    font-family: 'Holtwood One SC', serif;
+}
+
+
+/* header */
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: 10;
+    padding:0.5em;
+    background-color:var(--coolgrey);
+    box-shadow:2px 2px 5px #253237;
+    border-bottom:1px solid #253237;
+}
+/* navigation */
+.nav-link{
+    text-decoration: none;
+    color:var(--mintblue);
+    display:block;
+    margin-right:10px;
+    padding:0.5em;
+}
+.nav-link:hover{
+    font-weight: 800;
+}
+/* main */
+
+/* welcome-section */
+
+#welcome-section{
+    background-color: var(--newblue);
+    height:100vh;
+    width:100%;
+}
+#welcome-section div{
+    margin:0 auto;
+    position:relative;
+    top:15%;
+    text-align:center;
+}
+
+
+.ws-title{
+    text-shadow: 2px 2px rgb(162, 161, 161);
+    margin-bottom:0.5em;
+}
+
+.profile-img{
+    height:200px;
+    max-width: 200px;
+    background: url('../media/images/IMG_0695.JPG') center/cover no-repeat var(--darkgrey);
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px var(--darkgrey);
+}
+
+@media (min-width:500px){
+    .profile-img {
+        height:300px;
+        max-width: 300px;}
+}
+@media (min-width:700px){
+    .ws-title,.pro-title,.contact-title{
+        font-size:2.5rem;
+    }
+    .profile-img {
+        height:400px;
+        max-width: 400px;}
+}
+
+.ws-description{
+    font-size:1.2rem;
+    margin-top:1.5em;
+}
+
+/* projects */
+#projects{
+    padding-bottom:5em;
+}
+.pro-link{
+    display:block;
+    text-decoration: none;
+    height: 100%;
+}
+.pro-link:hover{
+    background-color: rgba(91, 108, 111, 0.5);
+}
+
+.pro-title{
+    text-align: center;
+    margin-bottom:1em;
+}
+.title-of-project{
+    background-color: rgba(69, 69, 69, 1);
+    color:whitesmoke;
+    padding:0.5em;
+}
+.project-tile{
+    border:3px solid var(--darkgrey);
+    box-shadow: 2px 2px 2px rgb(27, 28, 29);
+}
+.project-1{
+    background: url('../media/images/tribute-page.png') center/cover no-repeat;
+}
+.project-2{
+    background: url('../media/images/landing_page.png') center/cover no-repeat;;
+}
+    
+.project-3{
+    background: url('../media/images/tech_doc.png') center/cover no-repeat;
+}
+
+.project-4{
+    background: url('../media/images/survey.png') center/cover no-repeat;
+}
+
+.project-5{
+    background: url('../media/images/learning_log.png') center/cover no-repeat;
+}
+
+.project-6{
+    background: url('../media/images/blog-template.png') center/cover no-repeat;
+}
+
+#contact{
+    background-color: var(--coolgrey);
+    text-align:center;
+    color:var(--newblue);
+    border-top:2px solid rgb(123, 147, 155);
+}
+.contact-title{
+    letter-spacing: 1.5px;
+    color:white;
+    margin-top:1em;
+}
+.contact-action{
+    margin:1em 0;
+    font-size:1rem;
+}
+.social-links {
+    margin-bottom:1em;
+    font-size:2rem;
+}
+
+
+#profile-link,.social-link{
+    display:inline-block;
+    text-decoration: none;
+    padding:10px;
+    color:whitesmoke;
+}
+
+#profile-link:hover,.social-link:hover{
+    color:rgb(255, 241, 214);
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    padding:2em;
+    background-color:var(--darkgrey);
+    color:var(--mintblue);
+}
+
+
